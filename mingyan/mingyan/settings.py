@@ -63,7 +63,8 @@ NEWSPIDER_MODULE = 'mingyan.spiders'
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 IMAGES_STORE = '/home/yusuzi/PycharmProjects/mingyan/image/'
 ITEM_PIPELINES = {
-    'mingyan.pipelines.ImagespiderPipeline': 300,
+    #'mingyan.pipelines.ImagespiderPipeline': 300,
+    'mingyan.MySQLPipline.MySQLPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
